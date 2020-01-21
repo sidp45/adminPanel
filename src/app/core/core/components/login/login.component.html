@@ -1,0 +1,25 @@
+<!-- <h1>Siddharth bhai tension mat lo</h1> -->
+
+ <div class="container login-container">
+    <div class="row">
+        <div class="col-md-6 login-form-1">
+            <h3>Login Form </h3>
+            <form [formGroup]="loginFormData" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <input type="text" class="form-control"  formControlName="loginId" placeholder="Your LoginId *" value="" />
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" formControlName="loginPassword" placeholder="Your Login Password *" value="" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btnSubmit" value="Login" />
+
+                </div>
+                <div class="form-group">
+                    <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" formControlName="rememberme" type="checkbox"></span></label><br>
+                </div>
+            </form>
+        </div> 
+</div>
+</div>
+ 
